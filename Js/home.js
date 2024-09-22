@@ -14,7 +14,9 @@ document.getElementById('add-balance-btn').addEventListener('click', function(ev
 
         document getElementById('account-balance').innerText.newBalance;
     }
-    else(
+    else{
         alert('plese currect your pin number')
-    )
+    }
+       
+    
 })
