@@ -25,14 +25,16 @@
                         <!-- <div class="divider"></div> -->
                         <!-- container box  -->
                         <div class="flex w-full flex-col gap-2 lg:flex-row mt-2">
-                            <div class="card bg-slate-50 rounded-box grid h-12 flex-grow place-items-center">Cash In
+                            <div id="show-add-money-form" class="card bg-slate-50 rounded-box grid h-12 flex-grow place-items-center">Add Money
                             </div>
-                            <div class="card bg-slate-50 rounded-box grid h-12 flex-grow place-items-center">Cash Out
+                            <div id="show-cash-out-form" class="card bg-slate-50 rounded-box grid h-12 flex-grow place-items-center">Cash Out
+                            </div>
+                            <div id="show-transfar-form" class="card bg-slate-50 rounded-box grid h-12 flex-grow place-items-center">TransForm
                             </div>
                         </div>
                         <div class="divider"></div>
                         <!-- input form  -->
-                        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="Add-money-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -55,7 +57,7 @@
                         </div>
 
                         <!-- input form cash Out  -->
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="cash-Out-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
@@ -77,6 +79,12 @@
                             </form>
                         </div>
                         <!-- input form cash Out end -->
+
+                        <!-- TransForm stated  -->
+                         <div id="transaction-section">
+                            <h2 class="text-5xl text-center">Transaction History</h2>
+                         </div>
+                        <!-- TransForm stated end -->
 
                     </div>
                 </div>
