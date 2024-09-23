@@ -5,12 +5,22 @@ document.getElementById('add-mony-btn').addEventListener('click', function (even
     const addPinNumber = getInputFieldValueById('add-pin-number');
     // console.log(addMoney);
 
+    if(isNaN(addMoney)){
+        alert('Failed to your add money');
+        return;
+    }
+
     if (addPinNumber === 1234) {
         const NewTaxtInput = getInputFieldTextById('Account-balance');
         const newBalanceTotal = addMoney + NewTaxtInput;
-        // console.log(newBalanceTotal);
 
         document.getElementById('Account-balance').innerText = newBalanceTotal;
+
+        // second history section 
+        const p = document.createElement('p');
+        p.innerText = `Added ${addMoney} Total New Balance ${newBalanceTotal}`;
+        // console.log(p)
+        document.getElementById('transaction-container').appendChild(p);
     }
     else {
         alert('Failed to add the money')
